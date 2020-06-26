@@ -1,0 +1,11 @@
+st3=list()
+st1=str(input('type a string: '))
+s1=st1.strip()                         #remove whitespaces from the begininng and the end
+print(s1)
+st2=s1.split()                         #converting string to list
+print(st2)
+for i in st2:
+  st3.append(len(i))                   #appending the length of st2 to st3 (st3 is a new list containing length of the elements from st2)
+for i in st2:
+  if(len(i)==max(st3)):                #check if the max length in st3 is the same as in i of st2
+    print(i,len(i))                    #if yes then print the longest word and it's length 
